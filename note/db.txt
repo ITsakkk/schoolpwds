@@ -1,0 +1,217 @@
+User
+
+TblResource
+-ResourceID
+-ResourceName
+-ResourceTypeID
+-ResourceURL
+-SubjectID
+
+TblResourceType
+-ResourceTypeID
+-ResourceTypeName
+
+TblSubject
+-SubjectID
+-SubjectKH
+-SubjectEN
+-CreditNumber
+-Hours
+-FacultyID
+-MajorID
+-YearID
+-SemesterID
+
+TblFaculty
+-FacultyID
+-FacultyKH
+-FacultyEN
+
+TblMajor
+-FacultyID
+-MajorID
+-MajorKH
+-MajorEN
+
+TblYear
+-YearID
+-YearKH
+-YearEN
+
+TblSemester
+-SemesterID
+-SemesterKH
+-SemesterEN correct my table analyst.
+
+ChatGPT
+Based on the provided table descriptions, here's a corrected version of your table analyst:
+
+TblResource:
+
+ResourceID (Primary Key)
+ResourceName
+ResourceTypeID (Foreign Key referencing TblResourceType)
+ResourceURL
+SubjectID (Foreign Key referencing TblSubject)
+TblResourceType:
+
+ResourceTypeID (Primary Key)
+ResourceTypeName
+TblSubject:
+
+SubjectID (Primary Key)
+SubjectKH
+SubjectEN
+CreditNumber
+Hours
+FacultyID (Foreign Key referencing TblFaculty)
+MajorID (Foreign Key referencing TblMajor)
+YearID (Foreign Key referencing TblYear)
+SemesterID (Foreign Key referencing TblSemester)
+TblFaculty:
+
+FacultyID (Primary Key)
+FacultyKH
+FacultyEN
+TblMajor:
+
+MajorID (Primary Key)
+FacultyID (Foreign Key referencing TblFaculty)
+MajorKH
+MajorEN
+TblYear:
+
+YearID (Primary Key)
+YearKH
+YearEN
+TblSemester:
+
+SemesterID (Primary Key)
+SemesterKH
+SemesterEN
+
+
+TblStudentInfo      
+  StudentID  
+  NameInKHmer    
+  NameInLatin    
+  FamilyName    
+  GivenName    
+  SexID      
+  IDPassportNo    
+  NationalityID    
+  CountryID    
+  DOB      
+  POB      
+  PhoneNumber    
+  Email      
+  CurrentAddress    
+  CurrentAddressPP   
+  Photo      
+  RegisterDate   
+ 
+TblSex      
+  SexID    
+  SexKH      
+  SexEN     
+ 
+TblNationality      
+  NationalityID  
+  NationalityKH    
+  NationalityEN   
+ 
+TblCountry      
+  CountryID  
+  CountryKH    
+  CountryEN    
+
+TblEducationalBackground      
+  EducationalBackgroundID  
+  SchoolTypeID    
+  NameSchool    
+  AcademicYear    
+  Province    
+  StudentID
+
+TblSchoolType      
+  SchoolTypeID  
+  SchoolTypeKH    
+  SchoolTypeEN   
+ 
+TblFamiltyBackground      
+  FamilyBackgroundID  
+  FatherName    
+  FatherAge    
+  FatherNationalityID    
+  FatherCountryID    
+  FatherOccupationID    
+  MotherName    
+  MotherAge    
+  MotherNationalityID    
+  MotherCountryID    
+  MotherOccupationID    
+  FamilyCurrentAddress    
+  SpouseName    
+  SpouseAge    
+  GuardianPhoneNumber    
+  StudentID
+
+TblStudentStatus      
+  StudentStatusID    
+  StudentID    
+  ProgramID    
+  Assigned    
+  Note    
+  AssignDate
+    
+TblProgram      
+  ProgramID    
+  YearID    
+  SemesterID    
+  ShiftID    
+  DegreeID    
+  AcademicYearID    
+  MajorID    
+  BatchID    
+  StartDate    
+  EndDate    
+  DateIsue    
+    
+TblBatch      
+  BatchID    
+  BatchKH    
+  BatchEN  
+
+TblAcademicYear      
+  AcademicYearID  
+  AcademicYear    
+
+TblDegree      
+  DegreeID  
+  DegreeNameKH    
+  DegreeNameEN    
+
+TblCampus      
+  CampusID  
+  CampusKH    
+  CampusEN    
+
+TblShift      
+  ShiftID    
+  ShiftKH      
+  ShiftEN
+
+
+  Homework 4:
+
+TblSchedule
+-ScheduleID
+-SubjectID
+-LecturerID
+-DayWeekID
+-TimeID
+-RoomID
+-AcademicProgramID
+-DateStart
+-DateEnd
+-ScheduleDate

@@ -1,0 +1,35 @@
+- tbllecturer
+- tblschedule
+
+
+
+  dw.daynameen,
+    t.starttime,
+    t.endtime,
+    r.roomname
+
+    
+    s.scheduleid,
+    s.subjectid,
+    s.lecturerid,
+    s.dayweekid,
+    s.timeid,
+    s.roomid,
+    s.programid,
+    s.datestart,
+    s.dateend,
+    s.scheduledate,
+    ss.studentstatusid,
+    ss.assigned,
+    ss.note,
+    ss.assigndate,
+    yr.yearen,
+    sem.semesteren,
+    sh.shiften,
+    deg.degreenameen,
+    acy.academicyear,
+    maj.majoren,
+    bat.batchen,
+    p.startdate AS program_startdate,
+    p.enddate AS program_enddate,
+    p.dateissue AS program_dateissue
